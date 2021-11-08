@@ -1,4 +1,20 @@
 <div class="flex-container vertical">
+  <div class="content-block fixed">
+    <div class="flex-container">
+      <div class="content-block fixed">
+        <a href="http://sirel.com.ua/" target="blank">
+          <img
+            class="sirel-logo"
+            src="http://sirel.com.ua/wp-content/uploads/2015/04/sirel-logo.png"
+          />
+        </a>
+      </div>
+      <div class="content-block flexible">
+        <h2>{{ "_GENERAL_TITLE" | translate }}</h2>
+        <h1>{{ "_DETAILED_TITLE" | translate }}</h1>
+      </div>
+    </div>
+  </div>
   <div class="content-block flexible" *ngIf="apiLoaded | async">
     <google-map [options]="mapOptions" [height]="'100%'" [width]="'100%'">
       <map-kml-layer *ngFor="let kml of kmls" [url]="kml"></map-kml-layer>
