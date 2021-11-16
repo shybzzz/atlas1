@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tryfb-4eb43": {
+      "hosting": {
+        "atlas1": [
+          "tryfb-4eb43"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tryfb-4eb43"
+  }
+}

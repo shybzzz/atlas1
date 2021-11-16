@@ -108,6 +108,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "atlas1:build:production",
+            "firebaseProject": "tryfb-4eb43",
+            "firebaseHostingSite": "tryfb-4eb43"
+          }
         }
       }
     }
