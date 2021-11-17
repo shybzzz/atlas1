@@ -17,7 +17,10 @@
   </div>
   <div class="content-block flexible" *ngIf="apiLoaded | async">
     <google-map [options]="mapOptions" [height]="'100%'" [width]="'100%'">
-      <map-kml-layer *ngFor="let kml of kmls" [url]="kml"></map-kml-layer>
+      <map-kml-layer
+        *ngFor="let kml of kmls | async"
+        [url]="kml"
+      ></map-kml-layer>
     </google-map>
   </div>
 </div>
